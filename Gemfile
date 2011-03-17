@@ -6,7 +6,15 @@ gem 'rails', '3.0.5'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 #gem 'sqlite3'
-gem 'pg'
+#gem 'pg'
+
+group :production, :staging do
+  gem "pg"
+end
+
+group :development, :test do
+  gem "sqlite3", "~> 1.3.0", :require => "sqlite3"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'
