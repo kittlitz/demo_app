@@ -32,7 +32,7 @@ test:
    encoding: UTF8
 
 production:
-  adapter: sqlite3
+  adapter: sqlite333
   database: db/production.sqlite3
   pool: 5
   timeout: 5000
