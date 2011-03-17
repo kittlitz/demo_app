@@ -31,11 +31,11 @@ test:
    host: localhost
    encoding: UTF8
 
-production:
-  adapter: sqlite333
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+#production:
+#  adapter: sqlite333
+#  database: db/production.sqlite3
+#  pool: 5
+#  timeout: 5000
 
 #production:
 #   adapter: postgresql
